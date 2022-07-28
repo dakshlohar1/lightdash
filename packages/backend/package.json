@@ -46,6 +46,7 @@
         "@sentry/node": "^6.12.0",
         "@sentry/tracing": "^6.12.0",
         "@sentry/types": "^6.13.3",
+        "@types/mysql": "^2.15.21",
         "ajv": "^8.3.0",
         "ajv-formats": "^2.1.0",
         "bcrypt": "^5.0.1",

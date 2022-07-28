@@ -12,7 +12,8 @@
         "snowflake-sdk": "^1.6.4",
         "pg": "^8.7.1",
         "odbc": "^2.4.2",
-        "@lightdash/common": "^0.194.3"
+        "@lightdash/common": "^0.194.3",
+        "mysql2": "^2.3.3"
     },
     "description": "Warehouse connectors for Lightdash",
     "devDependencies": {
@@ -20,6 +21,7 @@
         "@types/jest": "^27.0.3",
         "jest": "^27.4.7",
         "@typescript-eslint/eslint-plugin": "^5.22.0",
+        "@types/mysql": "^2.15.21",
         "@typescript-eslint/parser": "^5.22.0",
         "eslint": "^8.7.0",
         "eslint-config-airbnb-base": "^15.0.0",

@@ -82,6 +82,24 @@ const credentialsTarget = (
                     [envVar('password')]: credentials.password,
                 },
             };
+        case WarehouseTypes.MYSQL:
+            return {
+                target: {
+                    type: credentials.type,
+                    host: credentials.host,
+                    user: envVarReference('user'),
+                    password: envVarReference('password'),
+                    port: credentials.port,
+                    schema: credentials.schema,
+                    enableKeepAlive: credentials.enableKeepAlive,
+                    keepAliveInitialDelay: credentials.keepAliveInitialDelay,
+                    sslmode: credentials.sslmode,
+                },
+                environment: {
+                    [envVar('user')]: credentials.user,
+                    [envVar('password')]: credentials.password,
+                },
+            };
         case WarehouseTypes.SNOWFLAKE:
             return {
                 target: {

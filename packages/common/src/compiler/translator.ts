@@ -40,6 +40,8 @@ const getDataTruncSql = (
         case SupportedDbtAdapter.POSTGRES:
         case SupportedDbtAdapter.DATABRICKS:
             return `DATE_TRUNC('${timeInterval.toUpperCase()}', ${field})`;
+        case SupportedDbtAdapter.MYSQL:
+            return `EXTRACT(${timeInterval.toUpperCase()} FROM ${field})`;
         default:
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
             const never: never = adapterType;

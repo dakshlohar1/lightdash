@@ -1,4 +1,5 @@
 import { DimensionType } from '@lightdash/common';
+import { FieldPacket } from 'mysql2';
 
 export type WarehouseTableSchema = {
     [column: string]: DimensionType;
@@ -26,4 +27,8 @@ export interface WarehouseClient {
     }>;
 
     test(): Promise<void>;
+}
+
+export interface MysqlFieldPacketWithColumnType extends FieldPacket {
+    columnType: number;
 }

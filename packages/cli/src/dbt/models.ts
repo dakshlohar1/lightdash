@@ -40,7 +40,7 @@ export const getWarehouseTableForModel = async ({
     };
     const catalog = await warehouseClient.getCatalog([tableRef]);
     const table =
-        catalog[tableRef.database]?.[tableRef.schema]?.[tableRef.table];
+        catalog[tableRef.database]?.[tableRef.schema]?.[tableRef.table]; // TODO: handle this for MYSQL where database or schema is not required
     if (!table) {
         const database = catalog[tableRef.database];
         const schema = database?.[tableRef.schema];

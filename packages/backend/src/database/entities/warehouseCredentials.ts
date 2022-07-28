@@ -8,6 +8,7 @@ export const warehouseTypes = [
     'snowflake',
     'postgres',
     'databricks',
+    'mysql',
 ] as const;
 type WarehouseType = typeof warehouseTypes[number];
 type DbWarehouseCredentials = {
