@@ -53,6 +53,11 @@ export const WarehouseTypeLabels = [
         key: WarehouseTypes.SNOWFLAKE,
         icon: Snowflake,
     },
+    {
+        label: 'Mysql',
+        key: WarehouseTypes.MYSQL,
+        icon: Snowflake,
+    }
 ];
 
 const WareHouseConnectCard: FC<Props> = ({ setWarehouse, showDemoLink }) => {

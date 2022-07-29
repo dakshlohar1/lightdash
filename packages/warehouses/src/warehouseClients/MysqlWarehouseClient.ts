@@ -1,11 +1,11 @@
-import * as mysqlTypings from 'mysql';
-import * as mysql2 from 'mysql2';
+import * as mysqlTypings from 'mysql'; 
+import * as mysql2 from 'mysql2'; 
 import {
     CreateMysqlCredentials,
     DimensionType,
     WarehouseConnectionError,
     WarehouseQueryError,
-} from '../../../common';
+} from '@lightdash/common';
 import { MysqlFieldPacketWithColumnType, WarehouseClient } from '../types';
 
 // Enum for all mysql data types https://dev.mysql.com/doc/refman/8.0/en/data-types.html

@@ -21,14 +21,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # dbt
 RUN python3 -m venv /usr/local/venv
-RUN /usr/local/venv/bin/pip install \
+RUN /usr/local/venv/bin/pip install --no-deps \
     "dbt-core==1.1.0" \
     "dbt-postgres==1.1.0" \
     "dbt-redshift==1.1.0" \
     "dbt-snowflake==1.1.0" \
     "dbt-bigquery==1.1.0" \
     "dbt-databricks==1.1.0" \
-    "dbt-mysql==1.0.0"
+    "dbt-mysql"
 ENV PATH $PATH:/usr/local/venv/bin
 
 RUN wget \
